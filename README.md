@@ -3,7 +3,7 @@ React for the user interface, Tailwind CSS for styling, and CSS Grid for layout.
 
 ## For developers
 ### Getting the Source Code
-Clone the Heatmap Package repository from GitHub:
+Clone this package:
 ```
 git clone https://github.com/hex909/react-heatmapjs.git
 ```
