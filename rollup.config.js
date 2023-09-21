@@ -5,6 +5,9 @@ import dts from "rollup-plugin-dts";
 import packageJson from "./package.json" assert { type: "json" };
 import postcss from "rollup-plugin-postcss";
 import babel from "@rollup/plugin-babel";
+import tailwindcss from "tailwindcss";
+import tailwindConfig from "./tailwind.config.js";
+import autoprefixer from "autoprefixer";
 
 export default [
   {
@@ -26,14 +29,8 @@ export default [
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
       postcss({
-        // minimize: true,
-        // modules: false,
-        // use: {
-        //   sass: null,
-        //   stylus: null,
-        //   less: { javascriptEnabled: false },
-        // },
-        extract: true,
+        extensions: [".css", ".module.css"],
+        plugins: [autoprefixer(), tailwindcss(tailwindConfig)],
       }),
       babel({
         babelHelpers: "bundled",

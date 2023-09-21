@@ -1,7 +1,6 @@
 import LegendButton from "./LegendButton";
 import { generateColor } from "../plugin/generateColor";
 import React from "react";
-import "../index.css";
 interface HeatMapInf {
   title?: string;
   colorRange: { from: number; to: number; color: string; name: string }[];
