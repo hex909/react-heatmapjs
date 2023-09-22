@@ -3,7 +3,9 @@
   "version": "0.9.5",
   "description": "React for the user interface, Tailwind CSS for styling, and CSS Grid for layout. A heatmap is a data visualization technique that uses color to represent the magnitude of values within a two-dimensional grid or matrix.",
   "type": "module",
+  "private": false,
   "scripts": {
+    "dev": "rollup -c -w",
     "build": "rollup -c"
   },
   "keywords": [],
@@ -15,6 +17,7 @@
     "@rollup/plugin-typescript": "^11.1.3",
     "@types/react": "^18.2.22",
     "autoprefixer": "^10.4.15",
+    "cssnano": "^6.0.1",
     "postcss": "^8.4.30",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

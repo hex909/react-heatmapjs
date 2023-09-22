@@ -24,6 +24,9 @@ export default [
         sourcemap: true,
       },
     ],
+    watch: {
+      include: "src/**",
+    },
     plugins: [
       resolve(),
       commonjs(),
