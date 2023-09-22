@@ -1,6 +1,6 @@
 {
   "name": "react-grid-heatmapjs",
-  "version": "0.9.7",
+  "version": "0.9.7.1",
   "description": "React for the user interface, Tailwind CSS for styling, and CSS Grid for layout. A heatmap is a data visualization technique that uses color to represent the magnitude of values within a two-dimensional grid or matrix.",
   "type": "module",
   "private": false,
