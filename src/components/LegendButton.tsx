@@ -11,4 +11,3 @@ function LegendButton({ label, variant }: { label: string; variant: string }) {
 }
 
 export default LegendButton;
-

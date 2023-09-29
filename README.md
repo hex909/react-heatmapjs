@@ -1,4 +1,4 @@
-# react-heatmapjs
+# react-grid-heatmapjs
 React for the user interface, Tailwind CSS for styling, and CSS Grid for layout. A heatmap is a data visualization technique that uses color to represent the magnitude of values within a two-dimensional grid or matrix.
 
 ## Properties
@@ -12,6 +12,9 @@ React for the user interface, Tailwind CSS for styling, and CSS Grid for layout.
   ## Examples
 
 ```
+import { HeatMap } from "react-grid-heatmapjs";
+import "react-grid-heatmapjs/dist/style.css";
+
 const data = {
   title: "Dummy Heat Map",
   colorRange: [
@@ -50,6 +53,15 @@ const data = {
     totals: [30, 60, 90, 120, 150],
   },
 };
+
+<HeatMap
+    title={data.title}
+    colorRange={data.colorRange}
+    series={data.series}
+    xaxis={data.xaxis}
+/>
+
+
 ```
 The data above will produce this heatmap.
 

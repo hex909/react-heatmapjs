@@ -17,7 +17,7 @@ interface HeatMapInf {
   chartStyle?: React.CSSProperties;
 }
 
-const HeatMap = ({
+export const HeatMap = ({
   series,
   xaxis,
   title,
@@ -117,5 +117,3 @@ const HeatMap = ({
     </div>
   );
 };
-
-export default HeatMap;

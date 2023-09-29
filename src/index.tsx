@@ -1,4 +1,2 @@
-import "./index.css";
-import HeatMap from "./components/Heatmap";
-
-export default HeatMap;
+import "./style.css";
+export * from "./components";
